@@ -16,9 +16,8 @@ file_to_save = os.path.join("analysis","election_analysis.txt")
 
 # Initialize a total vote counter
 total_votes = 0
-# Candidate options
+# Candidate options and candidate votes
 candidate_options = []
-# candidate dictionary
 candidate_votes = {}
 # Winning candidate and winning count tracker
 winning_candidate = ""
@@ -27,7 +26,6 @@ winning_percentage = 0
 
 # Open the election results and read the file
 with open(file_to_load) as election_data:
-# To do: read and analyze the data here
     # Read the file object with the reader function
     file_reader = csv.reader(election_data)
     # Read the header row
