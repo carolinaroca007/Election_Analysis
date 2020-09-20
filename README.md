@@ -40,5 +40,5 @@ The analysis of the election shows that:
     * Arapahoe received 6.7% of the vote and 24,801 number of votes
 - The winner of the election was:
     * Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
-- The county with the largest nnumber of votes was:
+- The county with the largest number of votes was:
     * Denver, who received 82.8% of the vote and 306.055 number of votes
