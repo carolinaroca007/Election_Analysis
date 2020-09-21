@@ -18,7 +18,7 @@ A Colorado Board of Elections manager, Seth, has tasked Tom, a Colorado Board of
  - Data Source: election_results.csv
  - Software: Python 3.7.6, Visual Studio Code 1.49.1
 
-## Summary
+## Election Audit Results
 The analysis of the election shows that:
 
 - There were 369,711 votes cast in the election
@@ -42,3 +42,16 @@ The analysis of the election shows that:
     * Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
 - The county with the largest number of votes was:
     * Denver, who received 82.8% of the vote and 306.055 number of votes
+
+## Election Audit Summary
+The script to audit election data is dynamic in which there are no hard-coded variables. If all election data is provided in the same format, in this case a .csv file, and the data elements, such as counties and candidates, are in the same order, this script will be able to execute and provide results instantly. There are a few modifications to be made even if the data elements are in the same order and format is the same; the path to the file you will be using needs to be changed. 
+
+Example of how to path a file when you do not know the exact file path but know the name of the file you will be using for the analysis and the folder it is stored in:
+        
+        *file_to_load = os.path.join("Name_of_Folder", "name_of_file.csv")*
+
+You will need to also modify the path of the file you will be saving the results to. This script prints the results to a text file, you need to alter the file name and name of the folder where you want that file to reside. You can use the follwing line of code as an example:
+ 
+        *file_to_save = os.path.join("Name_of_Folder", "name_of_file.txt")*
+
+If the data elements are in the same order, and the aforementioned lines of code are altered, the script will work for any other precinct elections!
